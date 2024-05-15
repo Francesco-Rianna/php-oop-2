@@ -3,10 +3,10 @@
 - I prodotti sono categorizzati, le categorie sono Cani o Gatti.
 - I prodotti saranno oltre al cibo, anche giochi, cucce, etc. -->
 <?php
-require_once __DIR__. '/Models/product.php' ;
+require_once __DIR__. '/Models/Product.php' ;
 
 
-$bosch = new Product('Nome Prodotto', 'Descrizione Prodotto', 100) ;
+$bosch = new Product('Bosch', 'cibo per cani', 20 ,'cani') ;
 var_dump($bosch) ;
 
 ?>
