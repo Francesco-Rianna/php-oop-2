@@ -10,9 +10,9 @@ require_once __DIR__. '/Models/CatProduct.php' ;
 
 $bosch = new Product('Bosch', 'cibo per cani', 20 ,'cani','https://shop-cdn-m.mediazs.com/bilder/1/800/70115_pla_bosch_maxiadult_15kg_2_1.jpg');
 // var_dump($bosch);
-$dogBed = new DogProduct('Dog Bed', 'spaziosa e comooda', 50, 'cani', 'Cuccia in legno','https://arcaplanet.vtexassets.com/arquivos/ids/216811/https---www.arcaplanet.it-media-catalog-product--b-a-baita-ferc14_1.jpg?v=637454582543530000');
+$dogBed = new DogProduct('Dog Bed', 'spaziosa e comooda', 50, 'cani', 'Cuccia in legno','https://arcaplanet.vtexassets.com/arquivos/ids/216811/https---www.arcaplanet.it-media-catalog-product--b-a-baita-ferc14_1.jpg?v=637454582543530000',15);
 // var_dump($dogBed);
-$omegaSpray = new CatProduct('Omega','spray per il pelo del gatto', 19, 'gatti','https://shop-cdn-m.mediazs.com/bilder/0/400/435002_pla_felisept_fellpflege_faltschachtel_flasche_hs_01_0.jpg','pelo lungo');
+$omegaSpray = new CatProduct('Omega','spray per il pelo del gatto', 19, 'gatti','https://shop-cdn-m.mediazs.com/bilder/0/400/435002_pla_felisept_fellpflege_faltschachtel_flasche_hs_01_0.jpg','pelo lungo', 15);
 // var_dump($omegaSpray);
 
 
@@ -56,6 +56,14 @@ $products = [
                             <?php } elseif ($product instanceof CatProduct) { ?>
                                 <p class="card-text">Tipo di pelo: <?php echo $product->furType; ?></p>
                             <?php } ?>
+                            <?php if ($product instanceof DogProduct) { ?>
+                                <p class="card-text">Per cani con età maggiore dei <?php echo $product->getAge(); ?> mesi</p>
+
+                            <?php } elseif ($product instanceof CatProduct) { ?>
+                                <p class="card-text">Per cani con età maggiore dei <?php echo $product->getAge(); ?> mesi</p>
+
+                            <?php } ?>
+                            
                         </div>
                     </div>
                 </div>

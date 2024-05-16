@@ -1,4 +1,5 @@
 <?php
+
 class Product { 
     public $name ;
     public $description ;
@@ -14,14 +15,7 @@ class Product {
         $this->image = $_image;
     }
 
-   
-    // public function getProduct() {
-    //     return 'Nome prodotto: ' . $this->name . '<br/>' . 
-    //            'Descrizione: ' . $this->description . '<br/>' . 
-    //            'Prezzo: ' . $this->price . '€' . '<br/>' . 
-    //            'Categoria: ' . $this->category . '<br/>' . 
-    //            'Immagine: '.'<img src="' . $this->image . '" alt="' . $this->name . '">';
-    // }
+
 
 }
 ?>
