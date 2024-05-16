@@ -8,13 +8,13 @@ class DogProduct extends Product {
         $this->kennels = $_kennels;
     }
     
-    public function getProduct() {
-        return 'Nome prodotto: ' . $this->name . '<br/>' . 
-               'Descrizione: ' . $this->description . '<br/>' . 
-               'Prezzo: ' . $this->price . '€' . '<br/>' . 
-               'Categoria: ' . $this->category . '<br/>' . 
-               'Tipo di cuccia :'. $this->kennels.
-               '<img src="' . $this->image . '" alt="' . $this->name . '">'. '<br/>';
-    }
+    // public function getProduct() {
+    //     return 'Nome prodotto: ' . $this->name . '<br/>' . 
+    //            'Descrizione: ' . $this->description . '<br/>' . 
+    //            'Prezzo: ' . $this->price . '€' . '<br/>' . 
+    //            'Categoria: ' . $this->category . '<br/>' . 
+    //            'Tipo di cuccia :'. $this->kennels.
+    //            '<img src="' . $this->image . '" alt="' . $this->name . '">'. '<br/>';
+    // }
 }
 ?>

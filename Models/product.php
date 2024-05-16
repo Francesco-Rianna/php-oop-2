@@ -15,13 +15,13 @@ class Product {
     }
 
    
-    public function getProduct() {
-        return 'Nome prodotto: ' . $this->name . '<br/>' . 
-               'Descrizione: ' . $this->description . '<br/>' . 
-               'Prezzo: ' . $this->price . '€' . '<br/>' . 
-               'Categoria: ' . $this->category . '<br/>' . 
-               'Immagine: '.'<img src="' . $this->image . '" alt="' . $this->name . '">';
-    }
+    // public function getProduct() {
+    //     return 'Nome prodotto: ' . $this->name . '<br/>' . 
+    //            'Descrizione: ' . $this->description . '<br/>' . 
+    //            'Prezzo: ' . $this->price . '€' . '<br/>' . 
+    //            'Categoria: ' . $this->category . '<br/>' . 
+    //            'Immagine: '.'<img src="' . $this->image . '" alt="' . $this->name . '">';
+    // }
 
 }
 ?>

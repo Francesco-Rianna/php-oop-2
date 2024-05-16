@@ -8,14 +8,14 @@ class CatProduct extends Product{
     }
 
    
-    public function getProduct() {
-        return 'Nome prodotto: ' . $this->name . '<br/>' . 
-               'Descrizione: ' . $this->description . '<br/>' . 
-               'Prezzo: ' . $this->price . '€' . '<br/>' . 
-               'Categoria: ' . $this->category . '<br/>' . 
-               '<img src="' . $this->image . '" alt="' . $this->name . '">'. '<br/>'.
-               'Tipo di pelo: '. $this->furType;
+    // public function getProduct() {
+    //     return 'Nome prodotto: ' . $this->name . '<br/>' . 
+    //            'Descrizione: ' . $this->description . '<br/>' . 
+    //            'Prezzo: ' . $this->price . '€' . '<br/>' . 
+    //            'Categoria: ' . $this->category . '<br/>' . 
+    //            '<img src="' . $this->image . '" alt="' . $this->name . '">'. '<br/>'.
+    //            'Tipo di pelo: '. $this->furType;
                
-    }
+    // }
 }
 ?>
